@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register Now!</h1>
+        <form  action="/register" method="POST" >
+            <div class="form-group">
+                <label for="InputName">Name</label>
+                <input type="name" class="form-control" name="name" placeholder="name"  required >
+              </div>
+            <div class="form-group">
+              <label for="InputEmail">Email address</label>
+              <input type="email" class="form-control"  name="email" aria-describedby="emailHelp" placeholder="Enter email"  required >
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="InputPassword">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Password"  required >
+            </div>
+            
+            <button type="submit" class="btn  btn-lg active btn-primary">Submit</button>
+          </form>
+          <br> <br> <br>
+          <a href="/login" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">LOGIN NOW</a>
+    </div>
+</body>
+
+</html>
